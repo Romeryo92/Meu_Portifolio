@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #0f1f2b;
+    position: fixed;
+    border-bottom: 2px solid #ccd0cf;
+}
+
+.container_header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    color: #ccd0cf;
+    position: relative;
+}
+
+.header_btn {
+    width: 60px;
+    height: 25px;
+    background-color: #ccd0cf;
+    border-radius: 1rem;
+    position: relative;    
+    cursor: pointer;
+}
+
+.trilho {
+    width: 25px;
+    height: 25px;
+    transform: scale(.9);
+    background-color: #0f1f2b;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.header_btn.dark .trilho {
+    left: 35px;
+}
+
+.nav_icon .fa-bars, .nav_icon .fa-xmark {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav_icon .fa-xmark {
+    display: none;
+}
+
+.nav_icon.menu .fa-xmark {
+    display: flex;
+}
+
+.nav_icon.menu .fa-bars {
+    display: none;
+}
+
+.nav_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav_icon.menu .nav_links {
+    display: flex;
+}
+
+.nav_links a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 4px #0f1f2b;
+}
+
+.change_color {
+    background-color: #0f1f2b;
+    color: #ccd0cf;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.welcome_info {
+    max-width: 350px;
+}
+
+.welcome_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.info_downloads {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.btn_dow {
+    text-decoration: none;
+    background-color: #345269;
+    color: #ccd0cf;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.btn_dow a {
+    color: #ccd0cf;
+    text-decoration: none;
+}
+
+.btn_dow:hover, .btn_dow a:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.my_img {
+    width: 250px;
+    display: flex;
+    background-color: #345269;
+    border-radius: 0 2rem;
+    box-shadow: 0px 0px 5px 2px #0F1F2B;
+    overflow: hidden;
+}
+
+.my_img img {
+    width: 100%;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:  2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.sobre p {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    
+}
+
+/* Habilidades */
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.habilidades a {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    background-color: #ccd0cf;
+    border-radius: 0rem 2rem;
+    transition: transform 0.5s;
+}
+
+.habilidades a:hover {
+    transform: scale(1.5);
+}
+
+.habilidades img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Projetos */
+
+.my_projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.my_projects a {
+    display: flex;
+    width: 300px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: transform 0.5s;
+}
+
+.my_projects a:hover {
+    opacity: 1;
+}
+
+.my_projects img {
+    width: 100%;
+    position: absolute;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #0f1f2b;
+    color: #ccd0cf;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border-top: 2px solid #ccd0cf;
+}
+
+.footer_links {
+    font-size: 2.5rem;
+}
+
+.footer_links a {
+    color: #ccd0cf;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+.header_name h2 {
+    font-size: 1.5rem;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.welcome_info {
+    max-width: 350px;
+    align-items: center;
+}
+
+.my_img {
+    margin-top: 2rem;
+}
+
+.habilidades a {
+    width: 100px;
+    height: 100px;
+}
+
+.habilidades {
+    gap: 1rem;
+}
+
+.my_projects a {
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+}
