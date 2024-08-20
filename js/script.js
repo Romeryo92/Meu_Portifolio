@@ -19,3 +19,21 @@ btn.addEventListener('click', () => {
 navBar.addEventListener("click", () => {
     navBar.classList.toggle("menu");
 });
+
+/* Modal */
+
+let modalContato = document.querySelector(".contatos_modal");
+let btnModal = document.querySelector("#btn_modal");
+let contato = document.querySelector(".contatos_btn")
+
+contato.addEventListener("click", () => {
+    modalContato.style.display="flex";    
+})
+
+btnModal.addEventListener("click", () => {
+    if(modalContato.style.display = "flex") {
+        modalContato.style.display = "none";
+    }
+})
+
+

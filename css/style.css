@@ -306,6 +306,66 @@ footer {
   color: #ccd0cf;
 }
 
+.contatos_modal{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+
+.wats_modal{
+  width: 60%;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: #ccd0cf;
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#btn_modal {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: rgb(226, 16, 16);
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wats_modal h3 {
+  font-size: 1.8rem;
+}
+
+.wats_modal p {
+  font-size: 1.2rem;
+}
+
+.copy_contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.fa-copy {
+  font-size: 1.2rem;
+}
+
 /* Responsividade */
 
 @media (max-width: 768px) {
